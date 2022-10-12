@@ -66,7 +66,7 @@ button,input,select,textarea {
 }
 
 .header__logo {
-  margin-bottom: 70px;
+  margin-bottom: 55px;
 }
 
 .header__presentation {
@@ -93,4 +93,25 @@ button,input,select,textarea {
   width: 100%;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+/* Section keeptrack */
+.section__keeptrack__top {
+  text-align: center;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.section__keeptrack__top h2 {
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  color:var(--dark-grayish-blue);
+}
+
+.section__keeptrack__top p {
+  max-width: 695px;
+  margin: 0 auto;
+  color:var(--grayish-blue);
+  line-height: 1.5;
 }
