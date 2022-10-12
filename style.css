@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+  --font-primary:'Bai Jamjuree', sans-serif;
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+
+/* Estándar */
+*,*::before,*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Generales */
+
+body {
+  font-size: 18px;
+  font-family: var(--font-primary);
+}
+
+button,input,select,textarea {
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-size: 18px;
+  max-width: 225px;
+  width: 100%;
+  height: 54px;
+  border-radius: 30px;
+  border:none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-green {
+  background-color: var(--strong-cyan);
+  box-shadow: 0px 3px 0px hsl(171, 66%, 38%);
+}
+
+.btn-blue {
+  background-color: var(--light-blue);
+  box-shadow: 0px 3px 0px hsl(233, 66%, 60%);
+}
+
+/* Header */
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 710px;
+  background-image: url("./images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.header__logo {
+  margin-bottom: 70px;
+}
+
+.header__presentation {
+  margin-bottom: 55px;
+  text-align: center;
+}
+.header__presentation h1{
+  font-size: 2.8rem;
+  color:var(--dark-grayish-blue);
+}
+
+.header__presentation p {
+  max-width: 680px;
+  margin-top: 24px;
+  font-size: 20px;
+  color:var(--grayish-blue);
+  line-height: 1.5;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 1rem;
+  max-width: 680px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
